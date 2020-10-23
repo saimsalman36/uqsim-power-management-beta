@@ -66,6 +66,7 @@ class Client
 		bool needSched(Time cur_time);
 		bool needRun(Time cur_time);
 		void setLastMonitorTime(Time cur_time);
+		void setNumConnections(unsigned nconn);
 
 		void run(Time time);
 		void show();

@@ -109,6 +109,11 @@ Client::setLastMonitorTime(Time cur_time) {
 }
 
 void
+Client::setNumConnections(unsigned nconn) {
+	numConn = nconn;
+}
+
+void
 Client::run(Time time) {
 	if(!allJobIssued && time >= nextTime) {
 		unsigned connId = rand() % numConn;
